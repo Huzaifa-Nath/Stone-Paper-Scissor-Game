@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stone-Paper-Scissor</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  
+  <h1>Stone - Paper - Scissor</h1>
+
+  <div class="container">
+    <div class="outerBoard">
+      <div class="scorecard">ScoreBoard</div>
+
+      <div class="outer">
+        <div id = "Player" class="player">Player - 0</div>
+        <div class="vs">VS</div>
+        <div id = "Bot" class="bot">Bot - 0</div>
+      </div>
+
+      <img src="assets/2.jpg" alt="image"/>
+
+      <div class="buttons">
+        <button id="rock" class="rps">🗿</button>
+        <button id="paper" class="rps">📜</button>
+        <button id="scissor" class="rps">✂</button>
+      </div>
+      <div id="draw-message" class="hidden">It's a Draw!</div>
+
+      <div class="new-btn">
+        <!-- <button class="rrps">Reset</button> -->
+        <button class="rrps" onclick="NewGame()">New Game</button>
+      </div>
+    </div> 
+  </div> 
+
+  <!-- Your game logic -->
+  <script src="index.js"></script>
+
+  <!-- Load confetti library -->
+  <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
+
+  <!-- Define global confetti function -->
+  <script>
+    window.throwConfetti = () => {
+      confetti({
+        particleCount: 100,
+        spread: 70,
+        origin: { y: 0.6 }
+      });
+    };
+  </script>
+<audio id="losesound" src="assets/lose.mp3"></audio>
+<audio id = "clap" src="claps-44774.mp3"></audio>
+
+</body>
+</html>
