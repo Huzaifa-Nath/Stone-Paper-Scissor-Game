@@ -34,7 +34,7 @@ A fun and interactive **Stone Paper Scissors** game built using **HTML, CSS, and
 
 ## 🚀 Live Demo
 
-🔗 [Click here to play now](https://huzaifa-nath.github.io/stone-paper-scissors-game)
+🔗 [Click here to play now](https://huzaifa-nath.github.io/Stone-Paper-Scissor-Game/)
 
 ---
 
